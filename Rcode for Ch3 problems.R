@@ -52,21 +52,3 @@ sum(birth1)
 posterior <- rbinom(n = 10000, size = 100, prob = samples)
 dens(posterior)
 #I think it looks pretty good. I expect 51 boys, and it seems like the predicted number is between 50 and 60.
-
-##3H5
-firstborn.girls <- (length(birth1) - sum(birth1))
-firstborn.girls
-#simulate 49 births, 10,000 times
-girl.boys.births <- rbinom(n=10000, size=firstborn.girls, prob = samples)
-dens(girl.boys.births)
-p.girl.boys.births <- sum(girl.boys.births)/10000
-p.girl.boys.births
-#so, 27.1252 simulated boys born after girls
-#compared to 30 boys actually born after girls
-
-boys.born.after.girls <- birth1[birth2==0]
-sum(boys.born.after.girls)
-
-#27.1/49 compared to 30/100
-#Way fewer boys are actually born after girls. I have no idea why that would be. This could be data from China or something? That's dark.  
-
