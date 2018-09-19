@@ -1,5 +1,3 @@
-#Hard level pracitce problems
-
 library(rethinking)
 data(homeworkch3)
 
