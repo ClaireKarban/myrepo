@@ -1,6 +1,3 @@
-library(rethinking)
-data(homeworkch3)
-
 ##3H1 Compute Posterior Distribution for prob of a birth being boy.
 #compute likelihood at each value in grid
 total.births <- length(birth1) + length(birth2)
